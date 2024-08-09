@@ -1,0 +1,713 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.bar {
+  display: none;
+}
+.searches{
+  display: none;
+}
+
+
+ @media (max-width:713px){
+ 
+  .nav1{
+    display: none ;
+  }
+  .bar{
+    display: block;
+  }
+  .searches{
+    display: block;
+  }
+  .nav3{
+    display: none;
+  }
+  .button2{
+    left: 38%;
+  }
+  .search{
+    display: none;
+  }
+ }
+
+
+.nav-footer {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  top: 90%;
+  width: 100%;
+  background-color: white; /* Example background color */
+  color: #fff; /* Example text color */
+  height: 10vh;
+  transition: ease-in 0.90s;
+}
+.button2{
+  transition: ease-in-out 0.90s
+}
+.divfirst{
+  transition: ease-in-out 1s
+}
+.divfirst h1{
+  opacity: 0;
+  transition: ease-in-out 2s
+}
+.navrpage{
+  transition: ease-in-out 2s;
+  animation: navr;
+}
+@keyframes navr{
+
+  from{
+    width: 0px;
+  }
+  to{
+    width: 90px;
+  }
+}
+@media screen and (max-width: 1012px) {
+  .divfirst h1{
+    opacity: 1;
+    transition: ease-in-out 2s
+  }
+}
+
+
+.mensx  {
+  transition: ease-in-out 1s
+}
+
+.menx img{
+  transition: ease-in-out 1s
+}
+
+
+
+
+.divfirst:hover{
+  .hh1{
+    transform: scale(1.1);
+    opacity: 1;
+   
+}
+  }
+  @media screen and (max-width: 444px) {
+    .divfirst h1{
+   font-size: 20vh;
+
+
+    }
+    
+  }
+  @media screen and (max-width: 897px) {
+    .divfirst .hh1{
+font-size: 6vh;
+
+
+    }
+  }
+  @media screen and (max-width: 655px) {
+    .divfirst .hh1{
+font-size: 4vh;
+
+
+
+    }
+
+    .hh1{
+opacity: 1;
+    }
+    .mensdiv{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .mens2div{
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: white;
+
+border-radius: 0px;    }
+.mensdiv button{
+  display: none;
+}
+.mensdiv h1{
+  font-size: 4vh;
+ margin-top: 30px;
+}
+.marque{
+  height: 4vh;
+}
+
+
+
+.womentext{
+  font-size: 25px;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+.womentext button{
+  display: none;
+}
+  }
+  @media screen and (max-width: 430px) {
+    .divfirst .hh1{
+font-size: 3vh;
+
+
+    }
+    .hh1{
+      opacity: 1;
+          }
+          .divmenstext{
+            font-size: 5vh;
+            
+          }
+          .mensx{
+            margin-top: 5vh;
+          }
+  }
+ 
+  
+  .woma{
+    transition: ease-in-out  1s ;
+  }
+
+
+@media screen and (max-width: 768px) {
+  .nav-footer {
+    height: 50px; /* Example height for smaller screens */
+    /* Additional styling for smaller screens if needed */
+  }
+}
+@media screen and (max-width: 1315px) {
+  .maindiv{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.box2 img{
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;}
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p2 {
+    display: flex;
+    animation: marquee 10s linear infinite;
+    white-space: nowrap; /* Ensure content doesn't wrap */
+  }
+  
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media screen and (max-width: 1214px) {
+.text{
+  font-size: 4vh;
+}
+
+  }
+.navrpage{
+  transition: ease-in-out 0.4s;
+  animation-name: navr;
+}
+@keyframes navr{
+  from{
+    width: 0%;
+  }
+  to{
+    width:100%;
+  }
+}
+  @media screen and (max-width: 1315px) {
+
+
+    .marque{
+
+      height: 5vh;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    .boxmain3{
+     height: 3vh;
+     font-size: 8px;
+    }
+  }
+ .footertext input {
+   border: 2px;
+    border-top: none;
+    backdrop-filter: transparent;
+    background-color: black;
+    outline: none;
+  
+  }
+  .navrpage input {
+    border: 2px;
+     border-top: none;
+     backdrop-filter: transparent;
+     background-color: black;
+     outline: none;
+   
+   }
+  .footertext:hover{
+    h1{
+      color: white;
+    }
+    
+  }
+  .footertext h1{
+    transition:  ease-in-out 1s;
+  }
+
+@media(max-width:1030px){
+
+.divfooters{
+  height: 150vh;
+}
+
+}
+@media (max-width:1369px){
+  .divxxy{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .divxxy  .divxx{
+    width: 100%;
+    margin-top: 5vh;
+  }
+  
+  .vintage{
+    margin-top: 15vh;
+  }
+}
+
+
+
+/*mens section*/
+
+
+@media(max-width:1240px){
+  .buttonmen{
+    bottom: 14vh;
+    height: 5vh;
+    width: 12vh;
+  }
+}
+@media(max-width:674px){
+  .buttonmen{
+    bottom: 15vh;
+    height: 2vh;
+    width: 6vh;
+    font-size: 10px;
+    
+  }
+}
+
+
+@media(max-width:717px){
+
+  .container2{
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+    width: 100%;
+  
+  }
+  .divy{
+    height: 50vh;
+    width: screen;
+
+  }
+  .container2 .div1{
+  width: 100%;
+   object-fit: contain;
+  }
+
+
+}
+@media(max-width:1043px){
+  .header3{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+
+  }
+  
+
+}
+/*containershirt*/
+
+@media(max-width:833px){
+
+  .containershirt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .boxmain2{
+    width:100%
+  }
+  
+}
+
+
+.box1x{
+  position: sticky;
+  top:2%
+}
+
+@media (max-width:1230px){
+  .shirt-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .maincontainer{
+    width:100%;
+  }
+  .maincontainer{
+    height: 100vh;
+    overflow: scroll;
+    
+  }
+  .box1x{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divn{
+    width:100%;
+  }
+  .text1{
+    font-size: 6vh;
+  }
+  
+}
+
+@media(max-width:793px){
+
+.img1{
+  height: 60vh;
+}
+.img2{
+  height: 60vh;
+}
+.imgx{
+  height:70vh;
+  width:90%
+}
+
+}
+
+@media(max-width:514px){
+
+  .img1{
+    height: 40vh;
+   
+  }
+  .img2{
+    height: 40vh;
+  }
+
+
+}
+
+@media(max-width:536px){
+
+  .text1{
+   font-size: 4vh;
+   
+  }
+  .select{
+width:50vh
+  }
+ 
+
+
+}
+@media(max-width:467px){
+
+  .text1{
+   font-size: 4vh;
+   
+  }
+  .select{
+    width:42vh;
+    overflow: hidden;
+    
+  }
+ 
+
+
+}
+@media(max-width:845px){
+
+
+  .divcart{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.6vh;
+    gap:2;
+  }
+  .image{
+  
+  width: 20%;
+  }
+}
+@media(max-width:716px){
+  .blazers{
+    width:100%
+  }
+}
+.select{
+  outline: none;
+}
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+  width: 100%;
+  height: 100vh;
+  
+}
+.svg{
+  width: 100%;
+  height: 100vh;
+ mask-image: url(download.svg);
+ mask-size: 0%;
+ mask-repeat: no-repeat;
+ mask-position: center;
+ transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.img4{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://shop.mango.com/cms-assets/v3/assets/blt351b9b24ac05a648/blt2327c1e20856203d/667edd8fdeaf2e11a73e4d9f/he_bannerinterior_avena_tonalrefresh_2806.jpg?imdensity=1&im=RegionOfInterestCrop,width=2048,height=878,regionOfInterest=(3229.5,228.9)");
+  background-size: 130%;
+  background-position: center;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+
+.img5{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://shop.mango.com/assets/rcs/pics/static/T7/fotos/outfit/S6/A2/77080598_02-99999999_01.jpg?ts=1719567258909&im=SmartCrop,width=2048,height=1431&imdensity=1");
+  background-size: 130%;
+  background-position: center;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-repeat: no-repeat;
+}
+
+.img7{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://shop.mango.com/cms-assets/v3/assets/blt351b9b24ac05a648/blt5a710aa807a688e0/668fb6490860b4744ad2d658/LANDING_BEST_SELLERS_(1).jpg?imdensity=1&im=RegionOfInterestCrop,width=2048,height=878,regionOfInterest=(1024,307.3)");
+  background-size: 150%;
+  background-position: center;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-repeat: no-repeat;
+
+}
+
+
+
+.svg2{
+  width: 100%;
+  height: 100vh;
+ mask-image: url(download.svg);
+ mask-size: 0%;
+ mask-repeat: no-repeat;
+ mask-position: center;
+ transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+html body{
+  overflow: hidden;
+}
+
+@media(max-width:1382px){
+
+  #main{
+    display: none;
+  }
+}
+ @media(min-width:1382px){
+  .responsivemen{
+    display:none;
+
+  }
+ }
+ .lidiv {
+  margin-left: 10px;
+  font-family: 'farfetchbasis', sans-serif;
+  font-weight: 200; /* Equivalent to font-extralight */
+  font-size: 2.7vh;
+}
+
+.lidiv a {
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px; /* Adjust if needed */
+}
+
+.lidiv a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.lidiv a:hover::after {
+  width: 100%;
+}
+
+.diverr {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust the gap between links here */
+  justify-content: center;
+  padding: 2px;
+}
+
+.diverr a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+
+.diverr a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.diverr a:hover::after {
+  width: 100%;
+}
+@media(max-width:661px){
+
+  .discover{
+    font-size: 3vh;
+    left: 33%;
+top: 120%;
+  }
+}
+@media(max-width:558px){
+
+  .discover2{
+    font-size: 2vh;
+    left: 33%;
+top: 120%;
+  }
+}
+@media(max-width:350px){
+
+  .divfirst .hh1{
+    font-size: 3vh;
+   
+  }
+}
+@media(max-width:932px){
+
+  .divfirst .hh1{
+    font-size: 12vh;
+   
+  }
+}
+
+@media(max-width:593px){
+
+  .divfirst .hh1{
+    font-size: 8vh;
+   
+  }
+}
+
+
+
+
+@media(max-width:712px){
+  .userss{
+    display: none;
+  }
+}
+
+body{
+  overflow: hidden;
+}
